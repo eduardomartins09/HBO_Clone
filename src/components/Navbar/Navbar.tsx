@@ -31,7 +31,6 @@ const Navbar = () => {
             <img 
                 src={HBOMaxLogo} 
                 alt="logo-site" 
-                width={150}
                 onClick={() => navigate("/")}
             />    
         </NavLogo>        

@@ -37,7 +37,7 @@ export const SubMenu = styled.div`
     display: flex;
     align-items: center;
     gap: 1rem;
-    font-size: 0.5em;
+    font-size: 0.7em;
 
     ${media.greaterThan('sm')`
         font-size: 1em;
@@ -48,15 +48,21 @@ export const NavLogo = styled.div`
     margin: 0 auto;         
     cursor: pointer;
     object-fit: contain;
+
+    img {
+        width: 120px;
+    }
+    
+    ${media.greaterThan('sm')`
+        img {
+            width: 150px;
+        }
+    `};
 `
 
 export const IconNav = styled.div`
-    font-size: 0.8em;
+    font-size: 1.2em;
     cursor: pointer;
-
-    ${media.greaterThan('xs')`
-        font-size: 1em;
-    `};
 
     ${media.greaterThan('sm')`
         font-size: 1.8em;

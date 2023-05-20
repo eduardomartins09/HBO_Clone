@@ -77,43 +77,137 @@ const Card = ({ title, path, isLarge, description }: CardProps) => {
                                 slidesPerView: 1.8,
                                 spaceBetween: 5
                             },
-                            380: {
+                            300: {
+                                slidesPerView: 1.7,
+                                spaceBetween: 5
+                            },
+                            350: {
+                                slidesPerView: 1.8,
+                                spaceBetween: 5
+                            },
+                            370: {
+                                slidesPerView: 1.9,
+                                spaceBetween: 5
+                            },
+                            378: {
                                 slidesPerView: 2,
                                 spaceBetween: 5
                             },
-                            405: {
+                            395: {
                                 slidesPerView: 2.1,
+                            },
+                            420: {
+                                slidesPerView: 2.2,
+                            },
+                            440: {
+                                slidesPerView: 2.3,
+                            },
+                            460: {
+                                slidesPerView: 2.4,
+                            },
+                            480: {
+                                slidesPerView: 2.6,
+                            },
+                            510: {
+                                slidesPerView: 2.8,
+                            },
+                            550: {
+                                slidesPerView: 2.9,
                             },
                             570: {
                                 slidesPerView: 3,
                                 spaceBetween: 5
                             },
-                            595: {
+                            590: {
                                 slidesPerView: 3.2,
                                 spaceBetween: 5
                             },
-                            650: {
-                                slidesPerView: 3.7,
+                            620: {
+                                slidesPerView: 3.4,
                                 spaceBetween: 5
                             },
-                            740: {
-                                slidesPerView: 4.2,
+                            650: {
+                                slidesPerView: 3.6,
+                                spaceBetween: 5
+                            },
+                            700: {
+                                slidesPerView: 3.8,
+                                spaceBetween: 5
+                            },
+                            735: {
+                                slidesPerView: 4.1,
+                                spaceBetween: 5
+                            },
+                            780: {
+                                slidesPerView: 4.3,
+                                spaceBetween: 5
+                            },
+                            800: {
+                                slidesPerView: 4.4,
+                                spaceBetween: 5
+                            },
+                            850: {
+                                slidesPerView: 4.6,
+                                spaceBetween: 5
+                            },
+                            885: {
+                                slidesPerView: 4.8,
+                                spaceBetween: 5
+                            },
+                            900: {
+                                slidesPerView: 5,
                                 spaceBetween: 5
                             },
                             920: {
-                                slidesPerView: 5.5,
+                                slidesPerView: 5.1,
                                 spaceBetween: 5
                             },
-                            1090: {
+                            970: {
+                                slidesPerView: 5.3,
+                                spaceBetween: 5
+                            },
+                            1010: {
+                                slidesPerView: 5.6,
+                                spaceBetween: 5
+                            },
+                            1075: {
+                                slidesPerView: 6,
+                                spaceBetween: 5
+                            },
+                            1130: {
                                 slidesPerView: 6.2,
                                 spaceBetween: 5
                             },
-                            1250: {
-                                slidesPerView: 7.2,
+                            1180: {
+                                slidesPerView: 6.4,
+                                spaceBetween: 5
+                            },
+                            1230: {
+                                slidesPerView: 6.9,
+                                spaceBetween: 5
+                            },
+                            1300: {
+                                slidesPerView: 7.1,
+                                spaceBetween: 5
+                            },
+                            1350: {
+                                slidesPerView: 7.4,
                                 spaceBetween: 5
                             },
                             1400: {
                                 slidesPerView: 8,
+                                spaceBetween: 5
+                            },
+                            1500: {
+                                slidesPerView: 8.3,
+                                spaceBetween: 5
+                            },
+                            1600: {
+                                slidesPerView: 8.7,
+                                spaceBetween: 5
+                            },
+                            1700: {
+                                slidesPerView: 9.4,
                                 spaceBetween: 5
                             },
                         }}  
@@ -157,7 +251,7 @@ const Card = ({ title, path, isLarge, description }: CardProps) => {
                         <IconPrexNext left={5} bottom={120} right={0} className='button-prev-slide'>
                             <BsArrowLeftCircleFill />
                         </IconPrexNext>
-                        <IconPrexNext left={0} bottom={120} right={30} className='button-next-slide'>
+                        <IconPrexNext left={0} bottom={120} right={10} className='button-next-slide'>
                             <BsArrowRightCircleFill />
                         </IconPrexNext> 
                     </Swiper>
@@ -183,45 +277,167 @@ const Card = ({ title, path, isLarge, description }: CardProps) => {
                         breakpoints={{
                             0: {
                                 slidesPerView: 1,
+                                
+                            },
+                            380: {
+                                slidesPerView: 1.1,
                                 spaceBetween: 50
                             },
-                            405: {
-                                slidesPerView: 1.1,
+                            400: {
+                                slidesPerView: 1.2,
                             }, 
-                            595: {
+                            430: {
+                                slidesPerView: 1.3,
+                            }, 
+                            450: {
+                                slidesPerView: 1.4,
+                            }, 
+                            470: {
+                                slidesPerView: 1.5,
+                            }, 
+                            490: {
+                                slidesPerView: 1.6,
+                            }, 
+                            520: {
+                                slidesPerView: 1.7,
+                            }, 
+                            550: {
+                                slidesPerView: 1.8,
+                            }, 
+                            580: {
                                 slidesPerView: 1.9,
+                                spaceBetween: 5
+                            },
+                            600: {
+                                slidesPerView: 2,
+                                spaceBetween: 5
+                            },
+                            630: {
+                                slidesPerView: 2.1,
                                 spaceBetween: 5
                             },
                             650: {
                                 slidesPerView: 2.2,
                                 spaceBetween: 5
                             },
-                            700: {
+                            680: {
+                                slidesPerView: 2.3,
+                                spaceBetween: 5
+                            },
+                            710: {
+                                slidesPerView: 2.4,
+                                spaceBetween: 5
+                            },
+                            740: {
                                 slidesPerView: 2.5,
                                 spaceBetween: 5
                             },
-                            780: {
-                                slidesPerView: 2.7,
+                            770: {
+                                slidesPerView: 2.6,
                                 spaceBetween: 5
                             },
                             805: {
                                 slidesPerView: 2.8,
                                 spaceBetween: 5
                             },
-                            920: {
+                            840: {
+                                slidesPerView: 2.9,
+                                spaceBetween: 5
+                            },
+                            870: {
+                                slidesPerView: 3,
+                                spaceBetween: 5
+                            },
+                            910: {
                                 slidesPerView: 3.1,
+                                spaceBetween: 5
+                            },
+                            975: {
+                                slidesPerView: 3.2,
                                 spaceBetween: 5
                             },
                             1000: {
                                 slidesPerView: 3.3,
                                 spaceBetween: 5
                             },
+                            1035: {
+                                slidesPerView: 3.4,
+                                spaceBetween: 5
+                            },
+                            1060: {
+                                slidesPerView: 3.5,
+                                spaceBetween: 5
+                            },
+                            1110: {
+                                slidesPerView: 3.7,
+                                spaceBetween: 5
+                            },
+                            1150: {
+                                slidesPerView: 3.8,
+                                spaceBetween: 5
+                            },
+                            1180: {
+                                slidesPerView: 3.9,
+                                spaceBetween: 5
+                            },
+                            1210: {
+                                slidesPerView: 4,
+                                spaceBetween: 5
+                            },
+                            1230: {
+                                slidesPerView: 4.1,
+                                spaceBetween: 5
+                            },
                             1250: {
                                 slidesPerView: 4.2,
                                 spaceBetween: 5
                             },
+                            1290: {
+                                slidesPerView: 4.3,
+                                spaceBetween: 5
+                            },
+                            1330: {
+                                slidesPerView: 4.4,
+                                spaceBetween: 5
+                            },
+                            1355: {
+                                slidesPerView: 4.5,
+                                spaceBetween: 5
+                            },
                             1400: {
+                                slidesPerView: 4.7,
+                                spaceBetween: 5
+                            },
+                            1445: {
                                 slidesPerView: 4.8,
+                                spaceBetween: 5
+                            },
+                            1470: {
+                                slidesPerView: 4.9,
+                                spaceBetween: 5
+                            },
+                            1500: {
+                                slidesPerView: 5,
+                                spaceBetween: 5
+                            },
+                            1540: {
+                                slidesPerView: 5.1,
+                                spaceBetween: 5
+                            },
+                            1580: {
+                                slidesPerView: 5.2,
+                                spaceBetween: 5
+                            },
+                            1610: {
+                                slidesPerView: 5.4,
+                                spaceBetween: 5
+                            },
+                            1660: {
+                                slidesPerView: 5.5,
+                                spaceBetween: 5
+                            },
+                            1700: {
+                                slidesPerView: 5.7,
                                 spaceBetween: 5
                             },
                         }}                  
@@ -265,7 +481,7 @@ const Card = ({ title, path, isLarge, description }: CardProps) => {
                         <IconPrexNext left={10} bottom={140} right={0} className='button-prev-slide'>
                             <BsArrowLeftCircleFill />
                         </IconPrexNext>
-                        <IconPrexNext left={0} bottom={140} right={40} className='button-next-slide'>
+                        <IconPrexNext left={0} bottom={140} right={10} className='button-next-slide'>
                             <BsArrowRightCircleFill />
                         </IconPrexNext>
                     </Swiper>

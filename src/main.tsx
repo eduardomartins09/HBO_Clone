@@ -16,10 +16,10 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <BrowserRouter>  
         <GlobalStyle />  
         <Routes>      
-            <Route path='/' element={<Homepage />} />
-            <Route path='cardDetails/:id' element={<CardDetails />} />
-            <Route path="/search" element={<SearchPage />} /> 
-            <Route path="/favorite" element={<FavoriteTitlePage />} /> 
+          <Route path='/' element={<Homepage />} />
+          <Route path='cardDetails/:id' element={<CardDetails />} />
+          <Route path="/search" element={<SearchPage />} /> 
+          <Route path="/favorite" element={<FavoriteTitlePage />} /> 
         </Routes>
       </BrowserRouter>
     </FavoriteListProvider>

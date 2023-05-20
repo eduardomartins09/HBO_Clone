@@ -8,12 +8,7 @@ export const RowContainer = styled.div`
 `
 
 export const RowHeader = styled.h1`
-    display: none;
     margin-bottom: 1rem;
-
-    ${media.greaterThan('xs')`   
-        display: block;
-    `};
 `
 
 export const RowHeaderSearch = styled.h1`
@@ -21,14 +16,10 @@ export const RowHeaderSearch = styled.h1`
 `
 
 export const CardsRow = styled.div`
-    display: none;
+    display: flex;
     justify-content: center;
     gap: 0.5rem;
     position: relative;
-
-    ${media.greaterThan('xs')`   
-        display: flex;
-    `};
 `
 
 export const GridCards = styled.div`

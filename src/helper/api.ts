@@ -42,7 +42,7 @@ const categories: Categories[] = [
   {
     name: "topRated",
     title: "Mais Populares",
-    description: "Os filmes mais assistidos no seu país nos últimos dias. Não fique por fora!",
+    description: "Os filmes mais assistidos nos últimos dias. Não fique por fora!",
     path: `/movie/top_rated?api_key=${API_KEY}&language=pt-BR`,
     isLarge: true,
   },
@@ -60,8 +60,8 @@ const categories: Categories[] = [
   },
   {
     name: "family",
-    title: "Maratona de Filmes Para Toda Familia",
-    description: "Aos filmes mais assistidos no seu país. Não perca tempo!",
+    title: "Para Toda Familia",
+    description: "Os filmes mais assistidos. Não perca tempo!",
     path: `/discover/movie?api_key=${API_KEY}&with_genres=10751`,
     isLarge: true,
   },
