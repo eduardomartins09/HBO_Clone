@@ -1,8 +1,11 @@
 import { useState } from 'react'
+
+import { API_KEY, genres } from '../../helper/api'
+
 import { IoSearchOutline } from 'react-icons/io5'
 
 import CardSearch from '../Cards/CardSearch'
-import { API_KEY, genres } from '../../helper/api'
+
 import { Genres, IconN, InputField, InputIcons, Form } from './FormSearch.styles'
 
 const FormSearch = () => {

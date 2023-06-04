@@ -1,13 +1,16 @@
 import { useState, useEffect } from 'react'
-import { useAxios } from '../../hooks/useAxios';
 import { Link } from 'react-router-dom';
-import { BsCheckCircleFill, BsFillPlayCircleFill, BsFillPlusCircleFill } from 'react-icons/bs';
 
-import imageNotFound from '../../imgs/image_not_found.jpg'
+import { useAxios } from '../../hooks/useAxios';
+import { useList } from '../../context/favoriteList';
 
 import { BASE_URL_API, Movies, getMovies, imageHost } from '../../helper/api'
+
+import { BsCheckCircleFill, BsFillPlayCircleFill, BsFillPlusCircleFill } from 'react-icons/bs';
+
 import { CardGrid, GridCards, Icon, MovieCard, Ploading, Pproblem, RowContainer, RowHeader, RowHeaderSearch } from './Cards.styles';
-import { useList } from '../../context/favoriteList';
+
+import imageNotFound from '../../imgs/image_not_found.jpg'
 
 type CardProps = {
   title: string

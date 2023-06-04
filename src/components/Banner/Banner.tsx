@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
 import categories, { getMovies, imageHost, truncate } from '../../helper/api'
+
 import { BannerButton, BannerButtons, BannerContainer, BannerContent, BannerDescription, BannerTitle, Ploading, Pproblem } from './Banner.styles'
 
 // import Swiper core and required modules

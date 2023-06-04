@@ -1,17 +1,19 @@
 import { useRef, useState } from 'react'
 import { Link } from 'react-router-dom';
-import { BsCheckCircleFill, BsFillPlayCircleFill, BsFillPlusCircleFill, BsArrowLeftCircleFill, BsArrowRightCircleFill } from 'react-icons/bs';
+
+import { useList } from '../../context/favoriteList';
 
 import { imageHost } from '../../helper/api'; 
-import imageNotFound from '../../imgs/image_not_found.jpg'
+
+import { BsCheckCircleFill, BsFillPlayCircleFill, BsFillPlusCircleFill, BsArrowLeftCircleFill, BsArrowRightCircleFill } from 'react-icons/bs';
 
 import { DivRelative, Icon, IconPrexNext , MovieCard, Ploading, Pproblem, RowContainer } from './Cards.styles';
-import { useList } from '../../context/favoriteList';
+
+import imageNotFound from '../../imgs/image_not_found.jpg'
 
 // import Swiper core and required modules
 import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide, } from 'swiper/react';
-
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';

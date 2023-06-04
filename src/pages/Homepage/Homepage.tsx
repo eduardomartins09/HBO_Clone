@@ -1,7 +1,8 @@
 import Banner from '../../components/Banner/Banner'
-import categories from '../../helper/api'
 import Card from '../../components/Cards/Card'
 import Navbar from '../../components/Navbar/Navbar'
+
+import categories from '../../helper/api'
 
 const Homepage = () => {
   

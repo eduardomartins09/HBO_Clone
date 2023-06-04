@@ -1,7 +1,11 @@
 import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom';
+
 import Navbar from '../../components/Navbar/Navbar';
 import BannerCardDetails from '../../components/Banner/BannerCardDetails'
-import { useParams } from 'react-router-dom';
+import CardsDetails, { DataCard } from '../../components/Cards/CardsDetails'; 
+
+import categories, { API_KEY, getMovies, getMoviesDetails, goToTheTop } from '../../helper/api';
 
 type BannerCardDetailsType = {
   title: string
@@ -12,9 +16,6 @@ type BannerCardDetailsType = {
   poster_path: string
   release_date: string
 }
-
-import categories, { API_KEY, getMovies, getMoviesDetails } from '../../helper/api';
-import CardsDetails, { DataCard } from '../../components/Cards/CardsDetails'; 
 
 const CardDetailsPage = () => {
   const { id } = useParams();
@@ -61,6 +62,7 @@ const CardDetailsPage = () => {
 
     const url = `${id}?api_key=${API_KEY}&language=pt-BR&append_to_response=recommendations,similar`
     fetchMoviesRecomendations(url)
+    goToTheTop()
   }, [id])
 
   return (

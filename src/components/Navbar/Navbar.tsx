@@ -1,11 +1,15 @@
 import { useEffect, useState } from 'react'
+import { useNavigate} from 'react-router-dom'
+
 import { IoIosMenu } from 'react-icons/io'
 import { IoSearchOutline } from 'react-icons/io5'
 import { BsPersonCircle } from 'react-icons/bs'
-import HBOMaxLogo  from '../../imgs/HBO-Max-Logo.png'
-import { useNavigate} from 'react-router-dom'
+
+import { goToTheTop } from '../../helper/api'
 
 import { IconNav, Menu, MenuBar, NavContainer, NavLogo, SubMenu } from './Navbar.styles'
+
+import HBOMaxLogo  from '../../imgs/HBO-Max-Logo.png'
 
 const Navbar = () => {
   const [show, setShow] = useState<boolean>(false)
@@ -42,7 +46,7 @@ const Navbar = () => {
             </IconNav>
             <IconNav>
                 <BsPersonCircle  
-                    onClick={() => navigate("/favorite")} 
+                    onClick={() => {navigate("/favorite"), goToTheTop()}} 
                 />
             </IconNav>
             <SubMenu>

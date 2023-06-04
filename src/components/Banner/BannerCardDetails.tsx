@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react'
+import { useList } from '../../context/favoriteList';
+import { changeDate, imageHost, truncate } from '../../helper/api';
+
 import { BsCheckCircleFill, BsFillPlayCircleFill, BsFillPlusCircleFill } from 'react-icons/bs';
 
 import imageNotFound from '../../imgs/image_not_found.jpg'
 
-import { changeDate, imageHost, truncate } from '../../helper/api';
 import { BannerContainerDetails, BannerContentDetails, BannerTitle, IconPlay, IconPlus, InfoDetails } from './Banner.styles';
-import { useList } from '../../context/favoriteList';
 
 type BannerCardDetailsProps = {
     title?: string 

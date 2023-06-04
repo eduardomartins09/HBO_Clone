@@ -1,11 +1,13 @@
 import { useState } from 'react'
-import { CardGrid, GridCards, Icon, MovieCard, Ploading, Pproblem, RowContainer, RowHeader } from './Cards.styles'
 import { Link } from 'react-router-dom'
 
-import imageNotFound from '../../imgs/image_not_found.jpg'
-
 import { InitValue, useList } from '../../context/favoriteList'
+
 import { BsFillPlayCircleFill, BsCheckCircleFill } from 'react-icons/bs'
+
+import { CardGrid, GridCards, Icon, MovieCard, Ploading, Pproblem, RowContainer, RowHeader } from './Cards.styles'
+
+import imageNotFound from '../../imgs/image_not_found.jpg'
 
 const CardList = ({ list }: Partial<InitValue>) => { 
   const { removeOfList } = useList()

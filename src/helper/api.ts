@@ -18,6 +18,10 @@ export const changeDate = (date: string | undefined) => {
   return date?.split("-").slice(0,1)   
 }
 
+export const goToTheTop = () => {
+  scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+}
+
 export type Categories = {
   name?: string
   title?: string

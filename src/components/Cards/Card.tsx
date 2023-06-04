@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react'
-import { useAxios } from '../../hooks/useAxios';
 import { Link } from 'react-router-dom';
+
+import { useAxios } from '../../hooks/useAxios';
+
+import { useList } from '../../context/favoriteList';
+
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill, BsCheckCircleFill, BsFillPlayCircleFill, BsFillPlusCircleFill } from 'react-icons/bs';
 
 import { BASE_URL_API, Movies, imageHost } from '../../helper/api'
@@ -15,7 +19,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 import { CardsRow, DivRelative, Icon, IconPrexNext, MovieCard, MovieCardIsLarge, MovieCardIsLargeButton, ParentMovieCardIsLarge, Ploading, Pproblem, RowContainer, RowHeader } from './Cards.styles';
-import { useList } from '../../context/favoriteList';
 
 type CardProps = {
     title?: string
